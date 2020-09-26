@@ -28,7 +28,7 @@ function win(u,c){
 
   result_div.innerHTML=`${letterconverter(u)}${smalluser} beats  ${letterconverter(c)}${smallcomp} . you win!🔥`;
   document.getElementById(u).classList.add("green-glow");
-  setTimeout(function(){document.getElementById(u).classList.remove("green-glow")},800);
+  setTimeout(function(){document.getElementById(u).classList.remove("green-glow")},300);
 }
 function lost(u,c){
   computer++;
@@ -40,7 +40,7 @@ function lost(u,c){
   document.getElementById(u).classList.add("red-glow");
   setTimeout(function(){
     document.getElementById(u).classList.remove("red-glow")
-  },800);
+  },300);
 }
 function draw(u,c){
 result_div.innerHTML="draw";
@@ -49,7 +49,7 @@ const smallcomp="comp".fontsize(3).sub();
 result_div.innerHTML=`${letterconverter(u)}${smalluser} equals  ${letterconverter(c)}${smallcomp} .it's a draw..😁`;
 document.getElementById(u).classList.add("gray-glow");
 setTimeout(function(){document.getElementById(u).classList.remove("gray-glow")
-},800);
+},300);
 }
 function game(userchoice){
   const compchoice=computerchoice()
